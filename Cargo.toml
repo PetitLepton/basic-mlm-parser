@@ -1,0 +1,14 @@
+[package]
+name = "forecasts"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.12.7", features = ["blocking", "json"] }
+tokio = { version = "1.40.0", features = ["full"] }
+openssl = { version = "0.10", features = ["vendored"] }
+serde_json = "1.0.128"
+serde = {version="1.0.210", features=["derive"]}
+chrono = { version = "0.4.38", features = ["serde"] }
